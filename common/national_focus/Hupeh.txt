@@ -221,7 +221,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = HUP_Establish_the_Health_Hotline
+		id = HUP_Establish_Health_Hotline
 		icon = GFX_focus_generic_self_management
 		cost = 10.00
 		prerequisite = {
@@ -313,7 +313,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = HUP_Conquer_Marajó
+		id = HUP_Conquer_Marajo
 		icon = GFX_focus_RAJ_lions_of_the_great_war
 		cost = 10.00
 		prerequisite = {
@@ -334,19 +334,19 @@ focus_tree = {
 			focus = HUP_Our_New_Home
 		}
 		mutually_exclusive = {
-			focus = HUP_Conquer_Marajó
+			focus = HUP_Conquer_Marajo
 		}
 		x = 25
 		y = 4
 
 	}
 	focus = {
-		id = HUP_Continue_The_War_in_Marajó
+		id = HUP_Continue_The_War_in_Marajo
 		icon = GFX_focus_generic_military_mission
 		cost = 10.00
 		prerequisite = {
 			focus = HUP_Rio_Conference
-			focus = HUP_Conquer_Marajó
+			focus = HUP_Conquer_Marajo
 		}
 		x = 24
 		y = 5
@@ -357,7 +357,7 @@ focus_tree = {
 		icon = GFX_goal_continuous_increase_nu
 		cost = 10.00
 		prerequisite = {
-			focus = HUP_Continue_The_War_in_Marajó
+			focus = HUP_Continue_The_War_in_Marajo
 		}
 		x = 22
 		y = 6
@@ -368,7 +368,7 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		cost = 10.00
 		prerequisite = {
-			focus = HUP_Continue_The_War_in_Marajó
+			focus = HUP_Continue_The_War_in_Marajo
 		}
 		x = 24
 		y = 6
@@ -379,7 +379,7 @@ focus_tree = {
 		icon = GFX_goal_generic_amphibious_assault
 		cost = 10.00
 		prerequisite = {
-			focus = HUP_Continue_The_War_in_Marajó
+			focus = HUP_Continue_The_War_in_Marajo
 		}
 		x = 26
 		y = 7
