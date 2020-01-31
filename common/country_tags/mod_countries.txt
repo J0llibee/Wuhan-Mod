@@ -1,1 +1,2 @@
 HUP = "countries/Hupeh.txt"
+VIR = "countries/Virus.txt"

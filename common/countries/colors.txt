@@ -535,7 +535,12 @@ D15 = {
 	color = rgb { 194 140 86 }
 	color_ui = rgb { 252 182 112 }
 }
+################
 HUP = {
 	color = rgb { 229 157 203 }
 	color_ui = rgb { 229 157 203 }
+}
+VIR = {
+	color = rgb { 120 0 0 }
+	color_ui = rgb { 120 0 0 }
 }
