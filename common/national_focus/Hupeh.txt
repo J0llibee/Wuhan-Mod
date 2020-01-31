@@ -171,7 +171,6 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = HUP_Prioritise_the_Interior
-			focus = HUP_Foreign_assistance
 		}
 		x = 7
 		y = 4
@@ -183,10 +182,6 @@ focus_tree = {
 		cost = 10.00
 		prerequisite = {
 			focus = HUP_Announce_the_Outbreak
-		}
-		mutually_exclusive = {
-			focus = HUP_Prioritise_the_Interior
-			focus = HUP_Murder_Will_Out
 		}
 		x = 13
 		y = 4
@@ -416,7 +411,6 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = HUP_Murder_Will_Out
-			focus = HUP_Foreign_assistance
 		}
 		x = 10
 		y = 4
