@@ -1,0 +1,27 @@
+﻿
+HUP_INF_01 = 
+{
+	name = "Infantry Unit"
+
+	for_countries = { HUP }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "%d Juntuán"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "P4 Laboratory Garrison" }
+		2 = { "Hupeh 'Secret' Shi" }
+		3 = { "Hupeh 'Virus' Shi" }
+		4 = { "Winnie the Poo" }
+		5 = { "Poo Poo Shi" }
+		6 = { "Hupeh 'Dare-to-Die' Shi" }
+
+	
+	}
+}

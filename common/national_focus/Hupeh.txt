@@ -1,0 +1,514 @@
+focus_tree = {
+	id = Hupeh
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = HUP
+		}
+	}
+	default = no
+	focus = {
+		id = HUP_P4_Lab_Incident
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		x = 8
+		y = 0
+			completion_reward = {
+					add_stability = 0.1
+				}
+
+	}
+	focus = {
+		id = HUP_Commissioner_Is_Sick
+		icon = GFX_focus_prc_remove_chiang_kai_shek
+		cost = 10.00
+		x = 26
+		y = 0
+
+	}
+	focus = {
+		id = HUP_Seperate_virus
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_P4_Lab_Incident
+		}
+		x = 3
+		y = 1
+			completion_reward = {
+					add_stability = 0.1
+				}
+
+	}
+	focus = {
+		id = HUP_Hopeh_Report
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Seperate_virus
+		}
+		x = 1
+		y = 2
+			completion_reward = {
+					add_stability = 0.1
+				}
+
+	}
+	focus = {
+		id = HUP_Letter_from_Yunnan
+		icon = GFX_focus_AST_squander_bug
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Seperate_virus
+		}
+		x = 3
+		y = 2
+			completion_reward = {
+					add_stability = 0.1
+				}
+
+	}
+	focus = {
+		id = HUP_Telegram_from_Kwantung
+		icon = GFX_focus_renounce_the_treaty_of_triannon
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Seperate_virus
+		}
+		x = 5
+		y = 2
+			completion_reward = {
+					add_stability = 0.1
+				}
+
+	}
+	focus = {
+		id = HUP_Pandemic
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Hopeh_Report
+		}
+		prerequisite = {
+			focus = HUP_Letter_from_Yunnan
+		}
+		prerequisite = {
+			focus = HUP_Telegram_from_Kwantung
+		}
+		x = 3
+		y = 3
+			completion_reward = {
+					add_stability = 0.1
+				}
+
+	}
+	focus = {
+		id = HUP_Outbreak
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Pandemic
+		}
+		x = 3
+		y = 4
+			completion_reward = {
+					add_stability = 0.1
+				}
+
+	}
+	focus = {
+		id = HUP_Conceal_the_facts
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_P4_Lab_Incident
+		}
+		x = 14
+		y = 1
+			completion_reward = {
+					add_stability = 0.1
+				}
+
+	}
+	focus = {
+		id = HUP_The_Wildlife_Wholesale_Market
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Conceal_the_facts
+		}
+		x = 14
+		y = 2
+			completion_reward = {
+					add_stability = 0.1
+				}
+
+	}
+	focus = {
+		id = HUP_Announce_the_Outbreak
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_The_Wildlife_Wholesale_Market
+		}
+		mutually_exclusive = {
+			focus = HUP_Conceal_the_Outbreak
+		}
+		x = 10
+		y = 3
+			completion_reward = {
+					add_stability = 0.1
+				}
+
+	}
+	focus = {
+		id = HUP_Murder_Will_Out
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Announce_the_Outbreak
+		}
+		mutually_exclusive = {
+			focus = HUP_Prioritise_the_Interior
+			focus = HUP_Foreign_assistance
+		}
+		x = 7
+		y = 4
+
+	}
+	focus = {
+		id = HUP_Foreign_assistance
+		icon = GFX_focus_generic_concessions
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Announce_the_Outbreak
+		}
+		mutually_exclusive = {
+			focus = HUP_Prioritise_the_Interior
+			focus = HUP_Murder_Will_Out
+		}
+		x = 13
+		y = 4
+
+	}
+	focus = {
+		id = HUP_Being_Rejected
+		icon = GFX_goal_generic_attack_allies
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Foreign_assistance
+		}
+		mutually_exclusive = {
+			focus = HUP_Being_Supprted
+		}
+		x = 12
+		y = 5
+
+	}
+	focus = {
+		id = HUP_Being_Supprted
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Foreign_assistance
+		}
+		mutually_exclusive = {
+			focus = HUP_Being_Rejected
+		}
+		x = 14
+		y = 5
+
+	}
+	focus = {
+		id = HUP_Establish_the_Health_Hotline
+		icon = GFX_focus_generic_self_management
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Being_Supprted
+		}
+		x = 14
+		y = 6
+
+	}
+	focus = {
+		id = HUP_Conceal_the_Outbreak
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_The_Wildlife_Wholesale_Market
+		}
+		mutually_exclusive = {
+			focus = HUP_Announce_the_Outbreak
+		}
+		x = 18
+		y = 3
+			completion_reward = {
+					add_stability = 0.1
+				}
+
+	}
+	focus = {
+		id = HUP_Maintain_Stability
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Conceal_the_Outbreak
+		}
+		mutually_exclusive = {
+			focus = HUP_Research_and_Development
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = HUP_Research_and_Development
+		icon = GFX_focus_research
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Conceal_the_Outbreak
+		}
+		mutually_exclusive = {
+			focus = HUP_Maintain_Stability
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = HUP_We_donot_need_him
+		icon = GFX_focus_attack_china
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Commissioner_Is_Sick
+		}
+		mutually_exclusive = {
+			focus = HUP_Cure_Chiang
+		}
+		x = 24
+		y = 1
+
+	}
+	focus = {
+		id = HUP_Retreat
+		icon = GFX_focus_mex_caudillo_private_armies
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_We_donot_need_him
+		}
+		x = 24
+		y = 2
+
+	}
+	focus = {
+		id = HUP_Our_New_Home
+		icon = GFX_focus_eng_global_defense
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Retreat
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = HUP_Conquer_Marajó
+		icon = GFX_focus_RAJ_lions_of_the_great_war
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Our_New_Home
+		}
+		mutually_exclusive = {
+			focus = HUP_Rio_Conference
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = HUP_Rio_Conference
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Our_New_Home
+		}
+		mutually_exclusive = {
+			focus = HUP_Conquer_Marajó
+		}
+		x = 25
+		y = 4
+
+	}
+	focus = {
+		id = HUP_Continue_The_War_in_Marajó
+		icon = GFX_focus_generic_military_mission
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Rio_Conference
+			focus = HUP_Conquer_Marajó
+		}
+		x = 24
+		y = 5
+
+	}
+	focus = {
+		id = HUP_The_Pure_Island
+		icon = GFX_goal_continuous_increase_nu
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Continue_The_War_in_Marajó
+		}
+		x = 22
+		y = 6
+
+	}
+	focus = {
+		id = HUP_Demand_Amazon
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Continue_The_War_in_Marajó
+		}
+		x = 24
+		y = 6
+
+	}
+	focus = {
+		id = HUP_Prepare_For_Our_Return
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Continue_The_War_in_Marajó
+		}
+		x = 26
+		y = 7
+
+	}
+	focus = {
+		id = HUP_Expand_Amazonia_Aluminum_Mine
+		icon = GFX_focus_generic_aluminum
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Prepare_For_Our_Return
+		}
+		x = 25
+		y = 8
+
+	}
+	focus = {
+		id = HUP_Amazon_War_Machine
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Prepare_For_Our_Return
+		}
+		x = 27
+		y = 8
+
+	}
+	focus = {
+		id = HUP_Prioritise_the_Interior
+		icon = GFX_focus_generic_military_academy
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Announce_the_Outbreak
+		}
+		mutually_exclusive = {
+			focus = HUP_Murder_Will_Out
+			focus = HUP_Foreign_assistance
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = HUP_Who_Cares
+		icon = GFX_focus_cze_german_puppet
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Being_Rejected
+		}
+		x = 12
+		y = 6
+
+	}
+	focus = {
+		id = HUP_Cure_Chiang
+		icon = GFX_focus_generic_china1
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Commissioner_Is_Sick
+		}
+		mutually_exclusive = {
+			focus = HUP_We_donot_need_him
+		}
+		x = 28
+		y = 1
+
+	}
+	focus = {
+		id = HUP_Deal_With_The_Disease
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Cure_Chiang
+		}
+		x = 28
+		y = 2
+
+	}
+	focus = {
+		id = HUP_Rio_Or_War
+		icon = GFX_goal_generic_demand_territory
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Demand_Amazon
+		}
+		prerequisite = {
+			focus = HUP_The_Pure_Island
+		}
+		x = 23
+		y = 7
+
+	}
+	focus = {
+		id = HUP_Full_Intergration_Of_Brazil
+		icon = GFX_goal_generic_major_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Rio_Or_War
+		}
+		x = 23
+		y = 8
+
+	}
+	focus = {
+		id = HUP_Time_To_Go_Home
+		icon = GFX_focus_attack_china
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Amazon_War_Machine
+		}
+		prerequisite = {
+			focus = HUP_Expand_Amazonia_Aluminum_Mine
+		}
+		prerequisite = {
+			focus = HUP_Full_Intergration_Of_Brazil
+		}
+		x = 25
+		y = 9
+
+	}
+	focus = {
+		id = HUP_Liberation
+		icon = GFX_focus_chi_one_china_policy
+		cost = 10.00
+		prerequisite = {
+			focus = HUP_Time_To_Go_Home
+		}
+		x = 25
+		y = 10
+
+	}
+}

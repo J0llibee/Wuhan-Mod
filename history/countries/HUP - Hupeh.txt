@@ -1,0 +1,47 @@
+capital = 620
+
+oob = "HUP_1936"
+
+set_cosmetic_tag = HUP_ROC
+
+set_stability = 0.4
+set_war_support = 0.2
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	mass_assault = 1
+}
+
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 80
+	communism = 20
+}
+
+create_country_leader = {
+	name = "Zhou Xianwang"
+	desc = "POLITICS_ZHOU_XIANWANG_DESC"
+	picture = "gfx/leaders/HUP/Portrait_Hupeh_Zhou_Xianwang.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Yi Xiaoguang"
+	portrait_path = "gfx/leaders/HUP/Portrait_Hupeh_Yi_Xiaoguang.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
